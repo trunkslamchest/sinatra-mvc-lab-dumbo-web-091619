@@ -1,9 +1,9 @@
 class PigLatinizer
 
-	def do_function(input_str)
+	def piglatinize(input_str)
 		new_phrase = ''
 		vowels = "aAeEiIoOuU"
-		split_phrase = user_phrase.split(" ")
+		split_phrase = input_str.split(" ")
 
 		split_phrase.each { |word|
 			if vowels.include?(word[0])
@@ -21,7 +21,5 @@ class PigLatinizer
 new_phrase
 
 	end
-
-
 
 end
