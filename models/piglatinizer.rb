@@ -6,7 +6,7 @@ class PigLatinizer
 	  @user_phrase = user_phrase
 	end
 
-	def do_function
+	def do_function(user_phrase)
 		new_phrase = ''
 		vowels = "aAeEiIoOuU"
 		split_phrase = user_phrase.split(" ")
