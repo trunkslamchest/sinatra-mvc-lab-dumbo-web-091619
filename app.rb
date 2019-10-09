@@ -11,6 +11,6 @@ class App < Sinatra::Base
 		@pig_latin = PigLatinizer.new(params[:user_phrase])
 
 
-		erb :piglatinizer
+		erb :pigLatinizer
 	end
 end
