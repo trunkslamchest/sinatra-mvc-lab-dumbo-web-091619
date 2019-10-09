@@ -1,28 +1,25 @@
 class PigLatinizer
 
 	def piglatinize(input_str)
-		new_phrase = ''
-		new_arr = []
+		new_array = []
 		vowels = "aAeEiIoOuU"
-		split_phrase = input_str.split(" ")
 
-		split_phrase.each { |word|
+		input_str.split(" ").each { |word|
 			if vowels.include?(word[0])
-				# new_phrase += word + "way"
-				new_arr << word + "way"
+				new_array << word + "way"
 			else
-				word.each_char.with_index do |char, i|
+				word.each_char.with_index { |char, i|
 					if vowels.include?(char)
-						# new_phrase += word[i..-1] + word[0...i] + "ay"
-						new_arr << word[i..-1] + word[0...i] + "ay"
+						new_array << word[i..-1] + word[0...i] + "ay"
 						break
 					end
-				end
+				}
 			end
 		}
 
-	new_phrase = new_arr.join(" ")
-	new_phrase
+	new_string = new_array.join(" ")
+
+	new_string
 
 	end
 
