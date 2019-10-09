@@ -1,4 +1,4 @@
-class Piglatinize
+class Piglatinizer
 
 	attr_reader :user_phrase
 	# attr_writer
