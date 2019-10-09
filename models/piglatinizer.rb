@@ -1,8 +1,6 @@
 class PigLatinizer
 
 	attr_reader :user_phrase
-	# attr_writer
-	# attr_accessor
 
 	def initialize(user_phrase)
 	@user_phrase = user_phrase
